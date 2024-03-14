@@ -1,3 +1,4 @@
+package Project2;
 import java.util.Arrays;
 
 public class Uloha2{

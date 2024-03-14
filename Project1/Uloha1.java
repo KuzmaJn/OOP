@@ -1,3 +1,4 @@
+package Project1;
 public class Uloha1{
     static int x = 100;
     static double y = 2.0;
