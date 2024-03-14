@@ -1,2 +1,2 @@
-# oop
-Nepovinne ulohy z predmetu OOP na FEI STU
+# Object oriented programming
+Me learning Java
