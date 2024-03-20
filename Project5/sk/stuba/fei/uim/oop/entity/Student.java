@@ -1,4 +1,4 @@
-package Project5.sk.stuba.fei.uim.oop.entity;
+package sk.stuba.fei.uim.oop.entity;
 
 public class Student {
     // fields

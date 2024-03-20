@@ -1,7 +1,7 @@
-package Project5.sk.stuba.fei.uim.oop;
+package sk.stuba.fei.uim.oop;
 
-import Project5.sk.stuba.fei.uim.oop.entity.Student;
-import Project5.sk.stuba.fei.uim.oop.entity.Course;
+import sk.stuba.fei.uim.oop.entity.Student;
+import sk.stuba.fei.uim.oop.entity.Course;
 
 public class Task_5 {
     public static void main(String[] args) {
