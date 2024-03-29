@@ -1,7 +1,6 @@
 package sk.stuba.fei.uim.oop;
 
-import sk.stuba.fei.uim.oop.entity.Student;
-import sk.stuba.fei.uim.oop.entity.Course;
+import sk.stuba.fei.uim.oop.entity.*;
 
 public class Task_5 {
     public static void main(String[] args) {

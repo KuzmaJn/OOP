@@ -1,5 +1,4 @@
 package sk.stuba.fei.uim.oop.entity;
-
 public class Course {
     // fields
     private String courseName;
