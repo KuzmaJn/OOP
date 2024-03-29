@@ -27,7 +27,5 @@ public class Task_6 {
 
         String databaseInfo = database.toString();
         System.out.println(databaseInfo);
-
-
     }
 }
