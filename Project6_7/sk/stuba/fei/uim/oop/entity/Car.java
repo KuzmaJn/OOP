@@ -1,4 +1,6 @@
-package entity;
+package sk.stuba.fei.uim.oop.entity;
+
+import sk.stuba.fei.uim.oop.database.*;
 
 import java.awt.*;
 
@@ -18,5 +20,9 @@ public class Car extends LightVehicle{
     public String toString() {
         return super.toString() + "\n" +
                 "Color: " + getColor();
+    }
+    @Override
+    public String accept(Printer db) {
+        return db.toStringVehicle(this);
     }
 }

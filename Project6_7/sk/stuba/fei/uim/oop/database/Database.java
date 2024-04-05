@@ -1,6 +1,6 @@
-package database;
+package sk.stuba.fei.uim.oop.database;
 
-import entity.*;
+import sk.stuba.fei.uim.oop.entity.*;
 
 public class Database {
     private Vehicle[] registeredVehicles;
@@ -14,6 +14,9 @@ public class Database {
         return registeredVehiclesCount;
     }
 
+    public Vehicle[] getRegisteredVehicles() {
+        return registeredVehicles;
+    }
     public boolean register(Vehicle vehicle) {
         if(registeredVehiclesCount >= registeredVehicles.length) {
             return false;

@@ -1,31 +1,36 @@
-import database.Database;
-import entity.*;
+package sk.stuba.fei.uim.oop;
+
+import sk.stuba.fei.uim.oop.database.Database;
+import sk.stuba.fei.uim.oop.database.Printer;
+import sk.stuba.fei.uim.oop.entity.*;
 import java.awt.*;
 
 
 public class Task_6 {
     public static void main(String[] args) {
-        Database database = new Database(5);
+        Database db = new Database(10);
+        try {
+            Person person = new Person("Jan", "New York");
+            System.out.println(person.toString());
 
-        Person person1 = new Person("John",  "Bratislava 1");
-        Person person2 = new Person("Jane",  "Bratislava 2");
-        Person person3 = new Person("Jack",  "Bratislava 3");
-        Person person4 = new Person("Jill",  "Bratislava 4");
-        Person person5 = new Person("James", "Bratislava 5");
+            Vehicle car = new Vehicle(person, null);
+            Car car1 = new Car(person, "BMW", 5, Color.BLACK);
+            Motorcycle motorcycle = new Motorcycle(person, "Yamaha", 2, MotorcycleType.SPORT);
+            Car car2 = new Car(person, "Audi", 5, Color.RED);
+            Truck truck = new Truck(person, "Tatra", 3, 1000);
 
-        Vehicle vehicle1 = new Car(person1, "Toyota", 5, Color.RED);
-        Vehicle vehicle2 = new Car(person2, "Ford", 5, Color.BLUE);
-        Vehicle vehicle3 = new Motorcycle(person3, "Harley-Davidson", 2, MotorcycleType.CRUISER);
-        Vehicle vehicle4 = new Truck(person4, "Yamaha", 5, 2500);
-        Vehicle vehicle5 = new Truck(person5, "Toyota", 2, 1000);
+            db.register(car);
+            db.register(car1);
+            db.register(motorcycle);
+            db.register(car2);
+            db.register(truck);
 
-        database.register(vehicle1);
-        database.register(vehicle2);
-        database.register(vehicle3);
-        database.register(vehicle4);
-        database.register(vehicle5);
+            Printer printer = new Printer(db);
 
-        String databaseInfo = database.toString();
-        System.out.println(databaseInfo);
+            System.out.println(printer.toStringCarsOnly());
+        }
+        catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

@@ -1,10 +1,10 @@
-package entity;
+package sk.stuba.fei.uim.oop.entity;
 
 public enum MotorcycleType {
     CRUISER,
     SCOOTER,
-    SPORT,
-    ;
+    SPORT;
+
     @Override
     public String toString() {
         return switch (this) {

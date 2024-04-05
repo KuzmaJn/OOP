@@ -1,4 +1,4 @@
-package entity;
+package sk.stuba.fei.uim.oop.entity;
 
 public class Motorcycle extends LightVehicle{
     private final MotorcycleType type;
