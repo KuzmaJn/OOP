@@ -1,7 +1,6 @@
 package sk.stuba.fei.uim.oop;
 
-import sk.stuba.fei.uim.oop.database.Database;
-import sk.stuba.fei.uim.oop.database.Printer;
+import sk.stuba.fei.uim.oop.database.*;
 import sk.stuba.fei.uim.oop.entity.*;
 import java.awt.*;
 
